@@ -5,7 +5,7 @@ def Convert(string):
     ls=list(string.split(delimiter)) #delimiter
     return ls
 with open("wordlist.py", "w+") as external_file:
-    rawfile = open("words.txt", "r")
+    rawfile = open(WORDLIST_FILENAME, "r")
     z=rawfile.read()
     print("Loading words...")
     time.sleep(1)
